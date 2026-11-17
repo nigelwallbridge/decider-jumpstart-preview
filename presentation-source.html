@@ -1,0 +1,127 @@
+<div id="decider-conversation-concept">
+ <div class="viz-carousel" aria-label="Conversational Decider designs">
+  <section data-variant="Phone"><div class="dc-stage dc-phone viz-dotted-background"><div class="dc-app" data-view="phone" aria-label="Phone conversation design"></div></div></section>
+  <section data-variant="Desktop" hidden><div class="dc-stage dc-desktop"><div class="dc-app" data-view="desktop" aria-label="Desktop conversation design"></div></div></section>
+ </div>
+</div>
+<style>
+#decider-conversation-concept{color-scheme:light dark}
+#decider-conversation-concept .dc-stage{min-height:800px;padding:12px 0 28px;box-sizing:border-box}
+#decider-conversation-concept .dc-app{--dc-paper:light-dark(#fbfaf6,#1c2324);--dc-white:light-dark(#fffefa,#262e2e);--dc-ink:light-dark(#213a39,#eef4ee);--dc-muted:light-dark(#5c6b66,#b8c8c1);--dc-line:light-dark(#d9e1d9,#42534d);--dc-green:light-dark(#25594b,#bcdfca);--dc-on:light-dark(#fffefa,#16372a);--dc-soft:light-dark(#eaf0e5,#31453a);--dc-warm:light-dark(#f4eddf,#433d30);--dc-mark:light-dark(#95683d,#e7ba86);--dc-shadow:light-dark(#233b3710,#00000025);width:100%;min-height:748px;box-sizing:border-box;background:var(--dc-paper);color:var(--dc-ink);font:15px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;border:1px solid var(--dc-line);border-radius:26px;box-shadow:0 14px 40px var(--dc-shadow);overflow:clip}
+#decider-conversation-concept .dc-app *{box-sizing:border-box}
+#decider-conversation-concept .dc-phone .dc-app{max-width:390px;margin:auto}
+#decider-conversation-concept .dc-app h1,#decider-conversation-concept .dc-app h2,#decider-conversation-concept .dc-app h3,#decider-conversation-concept .dc-app p{margin:0}
+#decider-conversation-concept .dc-header{padding:20px 23px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+#decider-conversation-concept .dc-logo{font-size:15px;letter-spacing:-.4px;font-weight:600}
+#decider-conversation-concept .dc-small{font-size:11px;color:var(--dc-muted)}
+#decider-conversation-concept .dc-app button,#decider-conversation-concept .dc-app input,#decider-conversation-concept .dc-app textarea{font:inherit;color:inherit}
+#decider-conversation-concept .dc-app button{touch-action:manipulation}
+#decider-conversation-concept .dc-link{border:0;background:transparent;padding:8px 0;color:var(--dc-green)!important;font-size:12px!important;min-height:40px;text-decoration:underline;text-underline-offset:4px}
+#decider-conversation-concept .dc-entry{padding:112px 24px 34px;display:flex;flex-direction:column;gap:26px}
+#decider-conversation-concept .dc-entry h1{font-size:35px;line-height:1.13;letter-spacing:-1.5px;font-weight:500;max-width:300px}
+#decider-conversation-concept .dc-compose{background:var(--dc-white);border:1px solid var(--dc-line);border-radius:20px;padding:17px;display:grid;gap:16px}
+#decider-conversation-concept .dc-compose textarea{width:100%;min-height:76px;resize:none;border:0;background:transparent;font-size:17px;outline-offset:5px}
+#decider-conversation-concept .dc-compose-foot{display:flex;justify-content:flex-end}
+#decider-conversation-concept .dc-send{width:46px;height:46px;border:0;border-radius:50%;background:var(--dc-green);color:var(--dc-on)!important;display:grid;place-items:center;font-size:23px!important}
+#decider-conversation-concept .dc-example{background:transparent;border:0;padding:5px 0;text-align:left;font-size:12px!important;color:var(--dc-muted)!important;min-height:36px}
+#decider-conversation-concept .dc-examples{display:grid;gap:1px;margin-top:6px}
+#decider-conversation-concept .dc-error{color:var(--dc-mark);font-size:12px}
+#decider-conversation-concept .dc-body{padding:12px 22px 22px}
+#decider-conversation-concept .dc-eyebrow{font-size:11px;color:var(--dc-muted);letter-spacing:.05em;text-transform:uppercase}
+#decider-conversation-concept .dc-question-title{font-size:24px;line-height:1.25;letter-spacing:-.7px;font-weight:500;margin:5px 0 24px!important}
+#decider-conversation-concept .dc-prompt{font-size:25px;line-height:1.2;font-weight:500;letter-spacing:-.7px;margin:18px 0 21px!important}
+#decider-conversation-concept .dc-options{border:0;padding:0;margin:0;display:grid;gap:9px;min-width:0}
+#decider-conversation-concept .dc-option{display:flex;align-items:center;gap:13px;background:var(--dc-white);border:1px solid var(--dc-line);border-radius:14px;padding:14px;min-height:55px}
+#decider-conversation-concept .dc-option:has(input:checked){background:var(--dc-soft);border-color:var(--dc-green)}
+#decider-conversation-concept .dc-option input{accent-color:var(--dc-green);width:18px;height:18px;flex-shrink:0;margin:0}
+#decider-conversation-concept .dc-primary{background:var(--dc-green);color:var(--dc-on)!important;border:0;border-radius:14px;padding:14px 19px;min-height:50px;width:100%;margin-top:24px;font-size:14px!important}
+#decider-conversation-concept .dc-primary:disabled{opacity:.45}
+#decider-conversation-concept .dc-preview-label{font-size:11px;color:var(--dc-muted);margin-top:18px!important}
+#decider-conversation-concept .dc-possibilities-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+#decider-conversation-concept .dc-possibilities-head h2{font-size:17px;font-weight:500;letter-spacing:-.3px}
+#decider-conversation-concept .dc-worlds{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#decider-conversation-concept .dc-world{padding:14px 12px;border-radius:16px;background:var(--dc-soft);border:1px solid transparent;min-width:0;transition:background .2s,border-color .2s}
+#decider-conversation-concept .dc-world:nth-child(2){background:var(--dc-warm)}
+#decider-conversation-concept .dc-world[data-emphasis="true"]{border-color:var(--dc-mark)}
+#decider-conversation-concept .dc-world h3{font-size:14px;font-weight:600;line-height:1.3;min-height:36px}
+#decider-conversation-concept .dc-path{padding-top:12px;margin-top:12px;border-top:1px solid var(--dc-line)}
+#decider-conversation-concept .dc-path b{font-size:12px;font-weight:600;display:block;margin-bottom:5px}
+#decider-conversation-concept .dc-path p{font-size:13px;line-height:1.4;overflow-wrap:anywhere}
+#decider-conversation-concept .dc-path em{font-size:11px;display:block;font-style:normal;color:var(--dc-muted);margin-top:5px}
+#decider-conversation-concept .dc-interpretation{font-size:13px;line-height:1.5;margin:13px 0 20px!important;color:var(--dc-muted);min-height:40px}
+#decider-conversation-concept .dc-topic-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+#decider-conversation-concept .dc-topic{background:transparent;color:var(--dc-muted)!important;border:1px solid var(--dc-line);border-radius:24px;padding:8px 12px;font-size:12px!important;min-height:38px}
+#decider-conversation-concept .dc-topic[aria-pressed="true"]{background:var(--dc-green);color:var(--dc-on)!important;border-color:var(--dc-green)}
+#decider-conversation-concept .dc-followup{background:var(--dc-white);border-radius:17px;padding:17px;border:1px solid var(--dc-line)}
+#decider-conversation-concept .dc-followup h2{font-size:19px;line-height:1.25;font-weight:500;letter-spacing:-.4px;margin-bottom:15px!important}
+#decider-conversation-concept .dc-followup .dc-options{grid-template-columns:1fr 1fr;gap:8px}
+#decider-conversation-concept .dc-followup .dc-option{padding:10px;min-height:49px;font-size:12px;border-radius:11px}
+#decider-conversation-concept .dc-followup .dc-option input{width:15px;height:15px}
+#decider-conversation-concept .dc-detail{margin-top:19px;color:var(--dc-muted);font-size:12px}
+#decider-conversation-concept .dc-detail summary{min-height:42px;padding:10px 0;color:var(--dc-green)}
+#decider-conversation-concept .dc-detail p{margin:9px 0!important}
+#decider-conversation-concept .dc-numbers{display:grid;gap:9px;margin:13px 0}
+#decider-conversation-concept .dc-number{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px}
+#decider-conversation-concept .dc-number input{width:88px;min-height:42px;padding:8px;border:1px solid var(--dc-line);border-radius:9px;background:var(--dc-white);font-variant-numeric:tabular-nums;font-size:14px}
+#decider-conversation-concept .dc-notes{font-size:11px;color:var(--dc-muted);margin:8px 0 12px;display:block}
+#decider-conversation-concept .dc-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--dc-line);padding-top:15px;margin-top:18px;font-size:11px;color:var(--dc-muted)}
+#decider-conversation-concept .dc-house-edit{display:grid;gap:12px}
+#decider-conversation-concept .dc-house-edit .dc-number{font-size:13px}
+#decider-conversation-concept .dc-house-edit .dc-number input{width:114px;font-size:16px}
+#decider-conversation-concept .dc-desktop .dc-entry{max-width:600px;margin:auto;padding-top:120px}
+#decider-conversation-concept .dc-desktop .dc-entry h1{max-width:none;font-size:40px}
+#decider-conversation-concept .dc-desktop .dc-body{padding:20px 42px 32px}
+#decider-conversation-concept .dc-desktop .dc-split{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:start}
+#decider-conversation-concept .dc-desktop .dc-like{max-width:420px;margin:20px auto 60px}
+#decider-conversation-concept .dc-desktop .dc-world{padding:20px 17px}
+#decider-conversation-concept .dc-desktop .dc-path{min-height:105px}
+#decider-conversation-concept .dc-desktop .dc-path p{font-size:15px}
+#decider-conversation-concept .dc-app :focus-visible{outline:3px solid var(--dc-mark);outline-offset:4px}
+@media(max-width:650px){#decider-conversation-concept .dc-desktop .dc-split{display:block}#decider-conversation-concept .dc-desktop .dc-body{padding:12px 22px 22px}#decider-conversation-concept .dc-desktop .dc-entry{padding:100px 24px 34px}#decider-conversation-concept .dc-desktop .dc-entry h1{font-size:35px}#decider-conversation-concept .dc-stage{min-height:820px}}
+@media(max-width:360px){#decider-conversation-concept .dc-body{padding:12px 16px 20px}#decider-conversation-concept .dc-worlds{gap:7px}#decider-conversation-concept .dc-world{padding:12px 9px}#decider-conversation-concept .dc-followup{padding:13px}#decider-conversation-concept .dc-followup .dc-option{padding:9px;gap:7px}#decider-conversation-concept .dc-entry{padding:100px 20px 30px}}
+@media(pointer:coarse){#decider-conversation-concept .dc-app input,#decider-conversation-concept .dc-app textarea{font-size:16px}#decider-conversation-concept .dc-topic{min-height:44px}}
+@media(prefers-reduced-motion:reduce){#decider-conversation-concept .dc-world{transition:none}}
+</style>
+<script>
+(()=>{
+ const root=document.getElementById('decider-conversation-concept');
+ const likes=['Not that much','Quite a bit','A lot','I love it!'],wear=['Hardly ever','Occasionally','Quite often','All the time'],regret=['I’d be fine','A little disappointed','I’d really regret it'];
+ const fresh=()=>({stage:'opening',kind:'dress',question:'',like:null,wear:2,regret:1,topic:'wear',values:{A:13,B:-6,C:-5,D:3,P:65,N:15},house:{offer:500000,high:600000,low:450000,P:60,N:100000},edited:{},detail:false});
+ const views={phone:fresh(),desktop:fresh()},designs={phone:{showExamples:true},desktop:{showExamples:true}};
+ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const pound=n=>'£'+Number(n).toLocaleString('en-GB');
+ function restore(raw){const stored=raw?.privateContent?.views;if(!stored)return;for(const v of ['phone','desktop']){const s=stored[v];if(s&&['opening','like','explore'].includes(s.stage)&&['dress','house'].includes(s.kind)){views[v]={...fresh(),...s,values:{...fresh().values,...s.values},house:{...fresh().house,...s.house},edited:{...s.edited}};}}}
+ restore(window.openai?.widgetState);
+ function save(){window.openai?.setWidgetState?.({modelContent:{concept:'Jumpstart Brief 3',simulation:true,phone:{stage:views.phone.stage,decision:views.phone.kind},desktop:{stage:views.desktop.stage,decision:views.desktop.kind}},privateContent:{views}})?.catch(()=>{});}
+ function options(v,group,items,value,compact=false){return `<fieldset class="dc-options" aria-label="${group==='like'?'How much do you like it?':group==='wear'?'How often would you wear it?':'How would leaving it feel?'}">${items.map((x,i)=>`<label class="dc-option"><input type="radio" name="${v}-${group}" value="${i}" data-answer="${group}" ${value===i?'checked':''}><span>${x}</span></label>`).join('')}</fieldset>`;}
+ function number(label,key,val,min,max,kind='value'){return `<label class="dc-number"><span>${label}</span><input type="number" aria-label="${label}" data-number="${key}" data-kind="${kind}" min="${min}" max="${max}" step="any" value="${val}"></label>`;}
+ function mapping(s){return `<details class="dc-detail" ${s.detail?'open':''} data-detail><summary>See the suggested numbers</summary><p>Example mappings for this design only—not a calibrated emotional scale.</p><p>Liking: 2 / 7 / 13 / 20 enjoyment points. Wearing frequency: 5 / 30 / 65 / 90% for the “love wearing it” scenario. Regret: 0 / −5 / −12 points.</p><p>Frequency is only an illustrative proxy for likelihood here. Disappointment −6, relief +3 and reserves 15 are fixed suggestions. These assumptions need validation before a working version.</p><div class="dc-numbers">${[['Buy · love it','A',-25,25],['Buy · hardly wear it','B',-25,25],['Leave · miss out','C',-25,25],['Leave · relief','D',-25,25],['Love-wearing scenario · %','P',0,100],['Starting emotional reserves','N',1,50]].map(([label,k,min,max])=>number(label,k,s.values[k],min,max)).join('')}</div><p>Reserves mean emotional capacity before this decision, not confidence in buying. No affordability check or Money calculation is included. Editing a number overrides its example mapping until you change that answer again.</p></details>`;}
+ function worlds(s){if(s.kind==='house')return `<div class="dc-worlds"><section class="dc-world"><h3>Market strengthens</h3><div class="dc-path"><b>Accept now</b><p data-amount="offer">${pound(s.house.offer)}</p><em>Net proceeds</em></div><div class="dc-path"><b>Wait six months</b><p data-amount="high">${pound(s.house.high)}</p><em>Suggested proceeds</em></div></section><section class="dc-world"><h3>Market weakens</h3><div class="dc-path"><b>Accept now</b><p data-amount="offer">${pound(s.house.offer)}</p><em>Net proceeds</em></div><div class="dc-path"><b>Wait six months</b><p data-amount="low">${pound(s.house.low)}</p><em>Suggested proceeds</em></div></section></div>`;
+ return `<div class="dc-worlds"><section class="dc-world" data-world="love"><h3>You love wearing it</h3><div class="dc-path"><b>Buy it</b><p data-enjoyment>Enjoyment & satisfaction</p></div><div class="dc-path"><b>Leave it</b><p data-regret>Some disappointment at missing out</p></div></section><section class="dc-world" data-world="unworn"><h3>You hardly wear it</h3><div class="dc-path"><b>Buy it</b><p>Wasted money & disappointment</p></div><div class="dc-path"><b>Leave it</b><p>Relief & money saved</p></div></section></div>`;}
+ function followup(v,s){if(s.kind==='house')return `<section class="dc-followup"><h2>What might waiting bring?</h2><div class="dc-house-edit">${number('Offer now · £','offer',s.house.offer,0,10000000,'house')}${number('Wait · strong market · £','high',s.house.high,0,10000000,'house')}${number('Wait · weak market · £','low',s.house.low,0,10000000,'house')}${number('Strong market chance · %','P',s.house.P,0,100,'house')}</div><span class="dc-notes">£500,000 comes from the example question. Other starting values are suggestions; edited values are yours.</span></section><details class="dc-detail" ${s.detail?'open':''} data-detail><summary>Starting resources & model</summary>${number('Starting cash resources · £','N',s.house.N,1,10000000,'house')}<p>Suggested six-month comparison. Proceeds are net of costs and debt, added to cash resources that exclude the house. The same offer applies in both market scenarios. No engine is connected.</p></details>`;
+ const group=s.topic,items=group==='wear'?wear:group==='like'?likes:regret;return `<div class="dc-topic-tabs" aria-label="Explore an answer">${[['wear','Wearing it'],['regret','Leaving it'],['like','Liking it']].map(([k,label])=>`<button class="dc-topic" data-topic="${k}" type="button" aria-pressed="${group===k}">${label}</button>`).join('')}</div><section class="dc-followup"><h2>${group==='wear'?'How often would you wear it?':group==='like'?'How much do you like it?':'How would leaving it feel?'}</h2>${options(v,group,items,s[group],true)}<span class="dc-notes">${group==='wear'&&s.wear===2&&!s.edited.wear?'“Quite often” is a starting suggestion.':'Your answer can change.'}</span></section>${mapping(s)}`;}
+ function render(v){const app=root.querySelector(`[data-view="${v}"]`),s=views[v];app.innerHTML=`<header class="dc-header"><span class="dc-logo">The Decider</span>${s.stage==='opening'?'<span class="dc-small">Design preview</span>':'<button class="dc-link" data-back type="button">New question</button>'}</header>`;
+ if(s.stage==='opening'){app.innerHTML+=`<main class="dc-entry"><h1>What do you want to decide?</h1><form class="dc-compose" data-ask><textarea aria-label="Your decision" placeholder="Ask a question…" rows="2">${esc(s.question)}</textarea><div class="dc-compose-foot"><button class="dc-send" type="submit" aria-label="Explore this question">↑</button></div></form><div class="dc-examples" ${!designs[v].showExamples?'hidden':''}><button class="dc-example" data-example="dress" type="button">Should I buy this dress?</button><button class="dc-example" data-example="house" type="button">Accept the £500,000 house offer, or wait?</button></div><p class="dc-error" role="alert" hidden></p></main>`;}
+ else if(s.stage==='like'){app.innerHTML+=`<main class="dc-body"><p class="dc-eyebrow">Should I buy this dress?</p><section class="dc-like"><h1 class="dc-prompt">How much do you like it?</h1>${options(v,'like',likes,s.like)}<button class="dc-primary" data-possibilities type="button" ${s.like===null?'disabled':''}>See the possibilities</button><p class="dc-preview-label">Design demonstration · no calculation</p></section></main>`;}
+ else{app.innerHTML+=`<main class="dc-body"><h1 class="dc-question-title">${s.kind==='dress'?'Should I buy this dress?':'Accept the house offer, or wait?'}</h1><div class="dc-split"><section><div class="dc-possibilities-head"><h2>Two choices. Two possible futures.</h2></div>${worlds(s)}<p class="dc-interpretation" aria-live="polite" data-interpretation></p></section><section>${followup(v,s)}</section></div><footer class="dc-footer"><span>Illustrative exploration · not a recommendation</span><span>No Decider calculation has been run</span></footer></main>`;}
+ bind(v,app);if(s.stage==='explore')update(v,app);}
+ function update(v,app){const s=views[v];if(s.kind==='house'){app.querySelectorAll('[data-amount]').forEach(el=>el.textContent=pound(s.house[el.dataset.amount]));app.querySelector('[data-interpretation]').textContent=s.house.offer>=550000?'A larger guaranteed offer changes the appeal of waiting. The two possible sale prices still matter.':'Waiting has an upside and a downside. Explore a different offer or market assumption.';return;}
+ app.querySelector('[data-world="love"]').dataset.emphasis=s.wear>=2;app.querySelector('[data-world="unworn"]').dataset.emphasis=s.wear<2;
+ app.querySelector('[data-enjoyment]').textContent=s.like>=2?'Enjoyment & satisfaction':s.like===1?'A purchase you quite like':'Limited excitement';
+ app.querySelector('[data-regret]').textContent=['No real sense of missing out','Some disappointment at missing out','Really wishing you had bought it'][s.regret];
+ let interpretation=s.wear<2?'You might love the dress, but rarely wear it. That makes the unworn possibility worth a closer look.':s.wear===3?'You picture wearing it all the time. Enjoyment comes into focus in this illustration.':'You can picture wearing it quite often. What changes if it mostly stays in the wardrobe?';
+ if(Object.keys(s.edited).some(k=>['A','B','C','D','P','N'].includes(k)))interpretation='You’ve changed the suggested numbers. These outcome descriptions remain illustrative; no mathematical result has been generated.';
+ app.querySelector('[data-interpretation]').textContent=interpretation;}
+ function start(v,kind,q){const s=views[v];s.kind=kind;s.question=q|| (kind==='dress'?'Should I buy this dress?':'Should I accept the £500,000 offer on my house or wait?');s.stage=kind==='dress'?'like':'explore';render(v);save();}
+ function bind(v,app){app.querySelector('[data-back]')?.addEventListener('click',()=>{views[v].stage='opening';render(v);save();});app.querySelectorAll('[data-example]').forEach(b=>b.onclick=()=>start(v,b.dataset.example));const form=app.querySelector('[data-ask]');if(form)form.onsubmit=e=>{e.preventDefault();const q=form.querySelector('textarea').value.trim();if(/dress/i.test(q))start(v,'dress',q);else if(/house|offer|buyer/i.test(q))start(v,'house',q);else{const error=app.querySelector('[role="alert"]');error.hidden=false;error.textContent='This design preview has two prepared examples: a dress and a house sale.';}};
+ app.querySelectorAll('[data-answer]').forEach(input=>input.onchange=()=>{const s=views[v],g=input.dataset.answer,n=Number(input.value);s[g]=n;s.edited[g]=true;if(g==='like'){s.values.A=[2,7,13,20][n];delete s.edited.A;}if(g==='wear'){s.values.P=[5,30,65,90][n];delete s.edited.P;}if(g==='regret'){s.values.C=[0,-5,-12][n];delete s.edited.C;}if(s.stage==='like')app.querySelector('[data-possibilities]').disabled=false;else {render(v);app.querySelector(`input[data-answer="${g}"][value="${n}"]`)?.focus();}save();});
+ app.querySelector('[data-possibilities]')?.addEventListener('click',()=>{views[v].stage='explore';render(v);save();});app.querySelectorAll('[data-topic]').forEach(b=>b.onclick=()=>{views[v].topic=b.dataset.topic;render(v);save();});
+ app.querySelectorAll('[data-number]').forEach(input=>{const change=()=>{const x=Number(input.value);if(input.value===''||!Number.isFinite(x)||x<Number(input.min)||x>Number(input.max))return;const s=views[v],key=input.dataset.number;if(input.dataset.kind==='house')s.house[key]=x;else s.values[key]=x;s.edited[key]=true;update(v,app);save();};input.oninput=change;input.onchange=()=>{if(!input.checkValidity())input.reportValidity();else change();};});
+ const detail=app.querySelector('[data-detail]');if(detail)detail.ontoggle=()=>{if(views[v].detail!==detail.open){views[v].detail=detail.open;save();}};}
+ for(const v of ['phone','desktop'])render(v);
+ window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);for(const v of ['phone','desktop'])render(v);}});
+ if(globalThis.Tweak){for(const v of ['phone','desktop']){const app=root.querySelector(`[data-view="${v}"]`),tweak=new Tweak({container:app,onChange:()=>{const el=app.querySelector('.dc-examples');if(el)el.hidden=!designs[v].showExamples;}});tweak.addToggle(designs[v],'showExamples',{label:'Show example questions on opening'});}}
+})();
+</script>
+
+
